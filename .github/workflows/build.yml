@@ -41,6 +41,6 @@ jobs:
     name  : SOMETHING
     runs-on: ubuntu-latest
     steps:
-      - run : echo "AHAHA ${{ github.head_ref }}"
+      - run : echo "AHAHA ${{ github.ref_name }}"
       
 
