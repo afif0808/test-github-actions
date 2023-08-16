@@ -37,5 +37,18 @@ jobs:
       - run: |
           go install github.com/rakyll/gotest@latest
           gotest
+
+  test-error:
+    name : TEST ERROR
+    runs-on: ubuntu-latest
+    steps: 
+      - run : |
+          something() {
+            echo "Something : $2"
+            return $1
+          }
+          something 0 "One"
+          something 1 "Two"
+          something 0  "Three"
       
 
