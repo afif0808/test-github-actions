@@ -44,11 +44,11 @@ jobs:
     steps: 
       - run : |
           something() {
-            echo "Something"
+            echo "Something : $2"
             return $1
           }
-          something 0
-          something 1
-          something 0
+          something 0 "One"
+          something 1 "Two"
+          something 0  "Three"
       
 
