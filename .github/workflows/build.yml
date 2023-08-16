@@ -37,5 +37,10 @@ jobs:
       - run: |
           go install github.com/rakyll/gotest@latest
           gotest
+  test-github-ref:
+    name  : SOMETHING
+    runs-on: ubuntu-latest
+    steps:
+      - run : echo ${{ github.head_ref }})
       
 
