@@ -36,7 +36,7 @@ jobs:
           go-version: '1.19'
       - run: |
           go install github.com/rakyll/gotest@latest
-          gotest
+          go run main.go
   test-github-ref:
     name  : SOMETHING
     runs-on: ubuntu-latest
